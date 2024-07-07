@@ -4,7 +4,6 @@
   "description": "Backend server for your application",
   "main": "app.js",
   "scripts": {
-    "build": "vite build",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "nodemon app.js",
     "client": "npm run dev --prefix ../frontend"
