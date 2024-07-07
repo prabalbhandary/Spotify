@@ -1,7 +1,7 @@
 {
   "scripts": {
     "start": "concurrently \"npm run client\" \"npm run server\"",
-    "server": "nodemon server/app.js",
+    "server": "nodemon backend/app.js",
     "client": "npm start --prefix ../client"
   },
   "dependencies": {
