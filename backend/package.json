@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "concurrently \"npm run client\" \"npm run server\"",
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
     "server": "nodemon backend/app.js",
     "client": "npm start --prefix ../client"
   },
