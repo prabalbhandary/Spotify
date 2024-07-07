@@ -1,8 +1,12 @@
 {
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend server for your application",
+  "main": "app.js",
   "scripts": {
-    "dev": "concurrently \"npm run client\" \"npm run server\"",
-    "server": "nodemon backend/app.js",
-    "client": "npm start --prefix ../client"
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon app.js",
+    "client": "npm run dev --prefix ../frontend"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -15,5 +19,7 @@
     "mongoose": "^7.3.4",
     "morgan": "^1.10.0",
     "nodemon": "^3.0.1"
-  }
+  },
+  "author": "Prabal Bhandary",
+  "license": "ISC"
 }
